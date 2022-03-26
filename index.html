@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+  
 <head>
   <meta charset="UTF-8">
   <meta charset="utf-8">
@@ -9,10 +9,33 @@
   <!-- <link rel="stylesheet" href="https://creative-sdk.bliink.io/css/styles.css?cb=1648216527"> -->
   <title>BLIINK</title>
   <style>
-    [data-id="623dc38a5c0f5d001875e0d4"] {
+
+    /* HP.png */
+    [data-id="623dff065c0f5d0018760652"] {
       opacity: 0
     }
-
+    
+    .is-active [data-id="623dff065c0f5d0018760652"] {
+      animation-name: opacity-fadeInn, slide-leftToRight-fout;
+      animation-delay: 4000ms, 5000ms;
+      animation-duration: 2000ms, 2500ms;
+      animation-fill-mode: forwards, forwards;
+    }
+    /* Axe img */
+    [data-id="623e12b5f32bfd00184701e2"] {
+      opacity: 0
+    }
+    
+    .is-active [data-id="623e12b5f32bfd00184701e2"] {
+      animation-name: opacity-fadeInn, slide-leftToRight-three;
+      animation-delay: 4000ms, 5000ms;
+      animation-duration: 2000ms, 3800ms;
+      animation-fill-mode: forwards, forwards;
+    }
+    /* [data-id="623dc38a5c0f5d001875e0d4"] {
+      opacity: 0
+    } */
+/* Aliexpress */
     .is-active [data-id="623dc38a5c0f5d001875e0d4"] {
       animation-name: opacity-fadeOut;
       animation-delay: 0ms;
@@ -23,118 +46,109 @@
     [data-id="623dc3a45c0f5d001875e16a"] {
       opacity: 0
     }
+    /* text rouge les marques */
+    [data-id="623dc5af5c0f5d001875e6cb"] {
+      opacity: 0
+    }
 
+    .is-active [data-id="623dc5af5c0f5d001875e6cb"] {
+      animation-name: opacity-fadeIn, opacity-fadeOut;
+      animation-delay: 2500ms, 3000ms;
+      animation-duration: 1500ms, 1000ms;
+      animation-fill-mode: forwards, forwards;
+    }
+/* Text blanc présente */
     .is-active [data-id="623dc3a45c0f5d001875e16a"] {
       animation-name: opacity-fadeIn, opacity-fadeOut;
-      animation-delay: 0ms, 0ms;
-      animation-duration: 2000ms;
-      animation-fill-mode: forwards;
+      animation-delay: 0ms, 1000ms;
+      animation-duration: 2000ms, 1000ms;
+      animation-fill-mode: forwards, forwards;
+    }
+
+    /* text blancs marques... */
+    [data-id="623dc4c75c0f5d001875e3ee"] {
+      opacity: 0
+    }
+
+    .is-active [data-id="623dc4c75c0f5d001875e3ee"] {
+      animation-name: opacity-fadeIn, opacity-fadeOut;
+      animation-delay: 2000ms, 2500ms;
+      animation-duration: 2000ms, 1000ms;
+      animation-fill-mode: forwards, forwards;
     }
     [data-id="623e3c2af32bfd001847078f"] {
       opacity: 0
     }
-
+  
+    /* PRIX_HP.png */
     .is-active [data-id="623e3c2af32bfd001847078f"] {
       animation-name: opacity-fadeIn, opacity-fadeOut;
-      animation-delay: 1000ms, 3000ms;
-      animation-duration: 2000ms, 2000ms;
+      animation-delay: 4000ms, 6000ms;
+      animation-duration: 2000ms, 1000ms;
       animation-fill-mode: forwards, forwards;
     }
+    /* PRIX_AXE_BLANC.png */
     [data-id="623e3e2bf32bfd001847088e"] {
       opacity: 0
     }
 
     .is-active [data-id="623e3e2bf32bfd001847088e"] {
       animation-name: opacity-fadeIn, opacity-fadeOut;
-      animation-delay: 3000ms, 4000ms;
-      animation-duration: 2000ms, 2000ms;
+      animation-delay: 5500ms, 8000ms;
+      animation-duration: 2000ms, 1000ms;
       animation-fill-mode: forwards, forwards;
-    }
-    [data-id="623e41e2f32bfd00184709f6"] {
-      opacity: 0
     }
 
-    .is-active [data-id="623e41e2f32bfd00184709f6"] {
-      animation-name: opacity-fadeIn, opacity-fadeOut;
-      animation-delay: 5000ms, 6000ms;
-      animation-duration: 2000ms, 2000ms;
-      animation-fill-mode: forwards, forwards;
-    }
+
+    /* PRIX_LISTERINE_BLANC.png */
     [data-id="623e3faaf32bfd001847092f"] {
       opacity: 0
     }
 
     .is-active [data-id="623e3faaf32bfd001847092f"] {
       animation-name: opacity-fadeIn, opacity-fadeOut;
-      animation-delay: 4000ms, 5000ms;
+      animation-delay: 8000ms, 10000ms;
       animation-duration: 2000ms, 2000ms;
       animation-fill-mode: forwards, forwards;
     }
-
-    [data-id="623dc4c75c0f5d001875e3ee"] {
-      opacity: 0
-    }
-
-    .is-active [data-id="623dc4c75c0f5d001875e3ee"] {
-      animation-name: opacity-fadeOut;
-      animation-delay: 1000ms;
-      animation-duration: 1000ms;
-      animation-fill-mode: forwards;
-    }
-
-    [data-id="623dc5af5c0f5d001875e6cb"] {
-      opacity: 0
-    }
-
-    .is-active [data-id="623dc5af5c0f5d001875e6cb"] {
-      animation-name: opacity-fadeOut;
-      animation-delay: 1100ms;
-      animation-duration: 2000ms;
-      animation-fill-mode: forwards;
-    }
-
-    /* [data-id="623dff065c0f5d0018760652"] { opacity: 0 } .is-active [data-id="623dff065c0f5d0018760652"] { animation-name: opacity-fadeIn; animation-delay: 1500ms; animation-duration: 2000ms; animation-fill-mode: forwards; } */
-    [data-id="623e12b5f32bfd00184701e2"] {
-      opacity: 0
-    }
-
-    .is-active [data-id="623e12b5f32bfd00184701e2"] {
-      animation-name: opacity-fadeInn, slide-leftToRight-three;
-      animation-delay: 1500ms, 2000ms;
-      animation-duration: 2000ms, 3000ms;
-      animation-fill-mode: forwards, forwards;
-    }
-    [data-id="623e25cff32bfd00184704a3"] {
+  /* listourne img */
+  [data-id="623e25cff32bfd00184704a3"] {
       opacity: 0
     }
 
     .is-active [data-id="623e25cff32bfd00184704a3"] {
-      animation-name: opacity-fadeInn, slide-leftToRight-five, slide-leftToRight-six, slide-leftToRight-six;
-      animation-delay: 1500ms, 2000ms, 5000ms, 5000ms;
-      animation-duration: 2000ms, 3000ms, 3000ms, 3000ms;
+      animation-name: opacity-fadeInn, slide-leftToRight-five, slide-leftToRight-six, slide-leftToRight-six-plus;
+      animation-delay: 3000ms, 5000ms, 7000ms, 9000ms;
+      animation-duration: 2000ms, 6000ms, 5000ms, 3000ms;
       animation-fill-mode: forwards, forwards, forwards, forwards;
     }
+        /* PRIX_MAUBOUSSIN TM.png */
+        [data-id="623e41e2f32bfd00184709f6"] {
+      opacity: 0
+    }
+
+    .is-active [data-id="623e41e2f32bfd00184709f6"] {
+      animation-name: opacity-fadeIn, opacity-fadeOut;
+      animation-delay: 10000ms, 11000ms;
+      animation-duration: 2000ms, 1000ms;
+      animation-fill-mode: forwards, forwards;
+    }
+
+    /* MAUBOUSSIN.png */
+
     [data-id="623e33c7f32bfd0018470607"] {
       opacity: 0
     }
 
     .is-active [data-id="623e33c7f32bfd0018470607"] {
-      animation-name: opacity-fadeInn, slide-leftToRight-five-bis, slide-leftToRight-six-bis, slide-leftToRight-six;
-      animation-delay: 3000ms, 4000ms, 5000ms, 6000ms;
+      animation-name: opacity-fadeInn, slide-leftToRight-five-bis, slide-leftToRight-six-ter, slide-leftToRight-six-quatro;
+      animation-delay: 6000ms, 8000ms, 9000ms, 11000ms;
       animation-duration: 2000ms, 3000ms, 3000ms, 3000ms;
       animation-fill-mode: forwards, forwards, forwards, forwards;
     }
 
-    [data-id="623dff065c0f5d0018760652"] {
-      opacity: 0
-    }
+    /* [data-id="623dff065c0f5d0018760652"] { opacity: 0 } .is-active [data-id="623dff065c0f5d0018760652"] { animation-name: opacity-fadeIn; animation-delay: 1500ms; animation-duration: 2000ms; animation-fill-mode: forwards; } */
 
-    .is-active [data-id="623dff065c0f5d0018760652"] {
-      animation-name: opacity-fadeInn, slide-leftToRight-four;
-      animation-delay: 1500ms, 2000ms;
-      animation-duration: 2000ms, 3000ms;
-      animation-fill-mode: forwards, forwards;
-    }
   </style>
 </head>
 
@@ -173,7 +187,7 @@
         <div data-id="623e3c2af32bfd001847078f" data-type="image" class="" style="background: url(&quot;https://creative-stg.bliink.io/62309b005cf8960018fe9beb/Z7qpj4S.png&quot;) center center / contain no-repeat; position: absolute; width: 26%; height: 33%; inset: 26% 5% 42% 69%; z-index: 3; cursor: pointer;"></div>
         <div data-id="623e3faaf32bfd001847092f" data-type="image" class="" style="background: url(&quot;https://creative-stg.bliink.io/62309b005cf8960018fe9beb/7AijqcU.png&quot;) center center / contain no-repeat; position: absolute; width: 26%; height: 33%; inset: 26% 5% 42% 69%; z-index: 2; cursor: pointer;"></div>
         <div data-id="623e3e2bf32bfd001847088e" data-type="image" class="" style="background: url(&quot;https://creative-stg.bliink.io/62309b005cf8960018fe9beb/b0P7niT.png&quot;) center center / contain no-repeat; position: absolute; width: 26%; height: 33%; inset: 26% 5% 42% 69%; z-index: 2; cursor: pointer;"></div>
-        <div data-id="623e41e2f32bfd00184709f6" data-type="image" class="" style="background: url(&quot;https://creative-stg.bliink.io/62309b005cf8960018fe9beb/K5xUBqE.png&quot;) center center / contain no-repeat; position: absolute; width: 26%; height: 33%; inset: 26% 5% 42% 69%; z-index: 4; cursor: pointer;"></div>
+        <div data-id="623e41e2f32bfd00184709f6" data-type="image" class="" style="background: url(&quot;https://creative-stg.bliink.io/62309b005cf8960018fe9beb/K5xUBqE.png&quot;) center center / contain no-repeat; position: absolute; width: 26%; height: 33%; inset: 26% 5% 42% 69%; z-index: 14; cursor: pointer;"></div>
         <div data-id="623dc3a45c0f5d001875e16a" data-type="image" class=""
           style="background: url(https://creative.bliink.io/623da2835c0f5d001875dd39/YxP1VI0.png) no-repeat center center; background-size: contain;position: absolute; width: 25%; height: 6%; top: 47%; bottom: 47%; left: 38%; right: 38%; ; z-index: 4;">
         </div>
