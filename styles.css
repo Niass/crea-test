@@ -115,6 +115,29 @@
     opacity: 0;
   }
 }
+@keyframes bgImage {
+  0% {
+    background-image: url('https://creative.bliink.io/623da2835c0f5d001875dd39/CXEESyw.png');
+  }
+  100% {
+    background-image: url('https://creative.bliink.io/623da2835c0f5d001875dd39/A9PljZ7.png');
+  }
+}
+
+@keyframes opacity-fadeOut-fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 @keyframes slide-leftToRight {
   from {
@@ -190,7 +213,7 @@
   }
   75% {
     transform: translateX(150%);
-    opacity: 0
+    opacity: 0;
   }
   100% {
     opacity: 0;
@@ -224,41 +247,35 @@
   }
 }
 @keyframes slide-leftToRight-five-biss {
-
   100% {
     transform: translateX(500%);
   }
 }
 @keyframes slide-leftToRight-six {
-
   90% {
     opacity: 1;
     transform: translateX(300%) scale(1.3, 1.3);
   }
 }
 @keyframes slide-leftToRight-six-ter {
-
   100% {
     opacity: 1;
     transform: translateX(350%) scale(1.3, 1.3);
   }
 }
 @keyframes slide-leftToRight-six-quatro {
-
   100% {
     opacity: 0;
     transform: translateX(600%);
   }
 }
 @keyframes slide-leftToRight-six-plus {
-
   100% {
     opacity: 0;
     transform: translateX(600%);
   }
 }
 @keyframes slide-leftToRight-six-bis {
-
   90% {
     transform: translateX(900%);
   }
