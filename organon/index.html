@@ -10,45 +10,69 @@
   <title>BLIINK</title>
   <style>
     @keyframes zoom-out {
-  0% {
-    transform: scale(1, 1);
-  }
-  50% {
-    transform: scale(0.5, 0.5);
-  }
-  100% {
-    transform: scale(0, 0);
-  }
-}
-@keyframes slide-leftToRight-four {
-  0%,
-  40% {
-    transform: translateX(0);
-  }
-  75% {
-    transform: translateX(400%);
-  }
-  100% {
-    transform: translateX(500%);
-  }
-}
-@keyframes scale-from-zero {
-  from {
-    transform: scale(0);
-  }
-  to {
-    transform: scale(1.5);
-  }
-}
-@keyframes move {
-  from {
-    transform: translateX(0) translateY(0);
-  }
+      0% {
+        transform: scale(1, 1);
+      }
 
-  to {
-    transform: translateX(10px) translateY(-30px);
-  }
-}
+      50% {
+        transform: scale(0.5, 0.5);
+      }
+
+      100% {
+        transform: scale(0, 0);
+      }
+    }
+
+    @keyframes slide-leftToRight-four {
+
+      0%,
+      40% {
+        transform: translateX(0);
+      }
+
+      75% {
+        transform: translateX(400%);
+      }
+
+      100% {
+        transform: translateX(500%);
+      }
+    }
+
+    @keyframes scale-from-zero {
+      from {
+        transform: scale(0);
+      }
+
+      to {
+        transform: scale(1.5);
+      }
+    }
+
+    @keyframes move {
+      from {
+        transform: translateX(0) translateY(0);
+      }
+
+      to {
+        transform: translateX(10px) translateY(-30px);
+      }
+    }
+
+    @keyframes zoom-in-zoom-out {
+      0% {
+        transform: scale(1, 1);
+      }
+
+      50% {
+        transform: scale(1.5, 1.5);
+      }
+
+      100% {
+        transform: scale(1, 1);
+      }
+    }
+
     [data-id="6279330d3363ff0018213c19"] {
       /* scale: 0; */
       transform: scale(0);
