@@ -6,27 +6,56 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
   <link rel="stylesheet" href="https://creative-sdk.bliink.io/css/styles.css?cb=1652176744">
-  <link rel="stylesheet" href="./styles.css">
+  <!-- <link rel="stylesheet" href="./styles.css"> -->
   <title>BLIINK</title>
   <style>
-    [data-id="6279330e3363ff0018213c1f"] {
-      opacity: 0
-    }
+    @keyframes zoom-out {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(0.5, 0.5);
+  }
+  100% {
+    transform: scale(0, 0);
+  }
+}
+@keyframes slide-leftToRight-four {
+  0%,
+  40% {
+    transform: translateX(0);
+  }
+  75% {
+    transform: translateX(400%);
+  }
+  100% {
+    transform: translateX(500%);
+  }
+}
+@keyframes scale-from-zero {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1.5);
+  }
+}
+@keyframes move {
+  from {
+    transform: translateX(0) translateY(0);
+  }
 
-    .is-active [data-id="6279330e3363ff0018213c1f"] {
-      animation-name: opacity-fadeIn;
-      animation-delay: 450ms;
-      animation-duration: 1750ms;
-      animation-fill-mode: forwards;
-    }
-
+  to {
+    transform: translateX(10px) translateY(-30px);
+  }
+}
     [data-id="6279330d3363ff0018213c19"] {
       /* scale: 0; */
       transform: scale(0);
     }
 
     .is-active [data-id="6279330d3363ff0018213c19"] {
-      animation-name: scale-2-test, move, slide-leftToRight-four;
+      animation-name: scale-from-zero, move, slide-leftToRight-four;
       animation-delay: 750ms, 2000ms, 3500ms;
       animation-duration: 2s, 1000ms, 2s;
       animation-fill-mode: forwards, forwards, forwards;
@@ -42,7 +71,7 @@
     }
 
     .is-active [data-id="627a20e23363ff0018214198"] {
-      animation-name: scale-2-test, move, slide-leftToRight-four;
+      animation-name: scale-from-zero, move, slide-leftToRight-four;
       animation-delay: 750ms, 2000ms, 3500ms;
       animation-duration: 2s, 1000ms, 2s;
       animation-fill-mode: forwards, forwards, forwards;
@@ -68,7 +97,7 @@
     }
 
     .is-active [data-id="627a216d3363ff0018214203"] {
-      animation-name: scale-2-test, move, zoom-out;
+      animation-name: scale-from-zero, move, zoom-out;
       animation-delay: 5900ms, 6500ms, 8000ms;
       animation-duration: 1s, 1000ms, 1s;
       animation-fill-mode: forwards, forwards, forwards;
@@ -82,7 +111,7 @@
     }
 
     .is-active [data-id="627a20093363ff0018214042"] {
-      animation-name: scale-2-test, move;
+      animation-name: scale-from-zero, move;
       animation-delay: 5900ms, 6500ms;
       animation-duration: 1s, 1000ms;
       animation-fill-mode: forwards, forwards;
@@ -118,10 +147,10 @@
     }
 
     .is-active [data-id="627a27073363ff00182145f4"] {
-      animation-name: slide-rightToLeft, slide-leftToRight-four;
-      animation-delay: 9000ms, 12000ms;
-      animation-duration: 1000ms, 5000ms;
-      animation-fill-mode: forwards, forwards;
+      animation-name: slide-rightToLeft;
+      animation-delay: 9000ms;
+      animation-duration: 1000ms;
+      animation-fill-mode: forwards;
     }
 
     [data-id="6279330f3363ff0018213c57"] {
@@ -173,11 +202,11 @@
     }
 
     .is-active [data-id="627a278f3363ff0018214736"] {
-      animation-name: slide-rightToLeft, zoom-in-zoom-out, slide-leftToRight-four;
-      animation-delay: 9000ms, 10000ms, 12000ms;
-      animation-duration: 1000ms, 1000ms, 5000ms;
-      animation-fill-mode: forwards, forwards, forwards;
-      animation-iteration-count: 1, 3, 1;
+      animation-name: slide-rightToLeft, zoom-in-zoom-out;
+      animation-delay: 9000ms, 10000ms;
+      animation-duration: 1000ms, 1000ms;
+      animation-fill-mode: forwards, forwards;
+      animation-iteration-count: 1, infinite;
     }
   </style>
 </head>
