@@ -8,193 +8,7 @@
   <link rel="stylesheet" href="https://creative-sdk.bliink.io/css/styles.css?cb=1652176744">
   <!-- <link rel="stylesheet" href="./styles.css"> -->
   <title>BLIINK</title>
-  <style>
-    @keyframes zoom-out {
-      0% {
-        transform: scale(1, 1);
-      }
-
-      50% {
-        transform: scale(0.5, 0.5);
-      }
-
-      100% {
-        transform: scale(0, 0);
-      }
-    }
-
-    @keyframes slide-leftToRight-four {
-
-      0%,
-      40% {
-        transform: translateX(0);
-      }
-
-      75% {
-        transform: translateX(400%);
-      }
-
-      100% {
-        transform: translateX(500%);
-      }
-    }
-
-    @keyframes scale-from-zero {
-      from {
-        transform: scale(0);
-      }
-
-      to {
-        transform: scale(1.5);
-      }
-    }
-
-    @keyframes move {
-      from {
-        transform: translateX(0) translateY(0);
-      }
-
-      to {
-        transform: translateX(10px) translateY(-30px);
-      }
-    }
-
-    @keyframes zoom-in-zoom-out {
-      0% {
-        transform: scale(1, 1);
-      }
-
-      50% {
-        transform: scale(1.5, 1.5);
-      }
-
-      100% {
-        transform: scale(1, 1);
-      }
-    }
-
-    [data-id="6279330d3363ff0018213c19"] {
-      transform: scale(0);
-    }
-
-    .is-active [data-id="6279330d3363ff0018213c19"] {
-      animation-name: scale-from-zero, move, slide-leftToRight-four;
-      animation-delay: 750ms, 2000ms, 3500ms;
-      animation-duration: 2s, 1000ms, 2s;
-      animation-fill-mode: forwards, forwards, forwards;
-      animation-iteration-count: 1, infinite, 1;
-      animation-timing-function: linear, linear, linear;
-      animation-direction: normal, alternate, normal;
-    }
-
-    [data-id="627a20e23363ff0018214198"] {
-      transform: scale(0);
-    }
-
-    .is-active [data-id="627a20e23363ff0018214198"] {
-      animation-name: scale-from-zero, move, slide-leftToRight-four;
-      animation-delay: 750ms, 2000ms, 3500ms;
-      animation-duration: 2s, 1000ms, 2s;
-      animation-fill-mode: forwards, forwards, forwards;
-      animation-iteration-count: 1, infinite, 1;
-      animation-timing-function: linear, linear, linear;
-      animation-direction: normal, alternate, normal;
-    }
-
-    .is-active [data-id="627a208b3363ff0018214104"] {
-      animation-name: slide-leftToRight-four;
-      animation-delay: 3500ms;
-      animation-duration: 2s;
-      animation-fill-mode: forwards;
-      animation-iteration-count: 1;
-      animation-timing-function: linear;
-      animation-direction: normal;
-    }
-
-    [data-id="627a216d3363ff0018214203"] {
-      transform: scale(0);
-    }
-
-    .is-active [data-id="627a216d3363ff0018214203"] {
-      animation-name: scale-from-zero, move, zoom-out;
-      animation-delay: 5900ms, 6500ms, 8000ms;
-      animation-duration: 1s, 1000ms, 1s;
-      animation-fill-mode: forwards, forwards, forwards;
-      animation-iteration-count: 1, infinite, 1;
-      animation-timing-function: linear, linear, linear;
-      animation-direction: normal, alternate, normal;
-    }
-
-    [data-id="627a20093363ff0018214042"] {
-      transform: scale(0);
-    }
-
-    .is-active [data-id="627a20093363ff0018214042"] {
-      animation-name: scale-from-zero, move;
-      animation-delay: 5900ms, 6500ms;
-      animation-duration: 1s, 1000ms;
-      animation-fill-mode: forwards, forwards;
-      animation-iteration-count: 1, infinite;
-      animation-timing-function: linear, linear;
-      animation-direction: normal, alternate;
-    }
-
-    [data-id="627a27073363ff00182145f4"] {
-      transform: translateX(1000%)
-    }
-
-    .is-active [data-id="627a27073363ff00182145f4"] {
-      animation-name: slide-rightToLeft;
-      animation-delay: 9000ms;
-      animation-duration: 1000ms;
-      animation-fill-mode: forwards;
-    }
-
-    [data-id="627a1f563363ff0018213f6f"] {
-      opacity: 0
-    }
-
-    .is-active [data-id="627a1f563363ff0018213f6f"] {
-      animation-name: opacity-fadeIn, opacity-fadeOut;
-      animation-delay: 5900ms, 7520ms;
-      animation-duration: 1080ms, 1000ms;
-      animation-fill-mode: forwards;
-    }
-
-    [data-id="627a24423363ff001821433e"] {
-      opacity: 0
-    }
-
-    .is-active [data-id="627a24423363ff001821433e"] {
-      animation-name: opacity-fadeIn;
-      animation-delay: 8790ms;
-      animation-duration: 1000ms;
-      animation-fill-mode: forwards;
-    }
-
-    [data-id="627a26653363ff00182144cc"] {
-      transform: translateY(1000%)
-    }
-
-    .is-active [data-id="627a26653363ff00182144cc"] {
-      animation-name: slide-bottomToTop;
-      animation-delay: 9000ms;
-      animation-duration: 1000ms;
-      animation-fill-mode: forwards;
-    }
-
-    [data-id="627a278f3363ff0018214736"] {
-      transform: translateX(1000%)
-    }
-
-    .is-active [data-id="627a278f3363ff0018214736"] {
-      animation-name: slide-rightToLeft, zoom-in-zoom-out;
-      animation-delay: 9000ms, 10000ms;
-      animation-duration: 1000ms, 1000ms;
-      animation-fill-mode: forwards, forwards;
-      animation-iteration-count: 1, infinite;
-    }
-  </style>
+  
 </head>
 
 <body data-click="${CLICK_URL}" style="margin: 0; overflow: hidden;">
@@ -263,7 +77,15 @@
     </div>
   </div>
   <script src="https://creative-sdk.bliink.io/library.min.js"></script>
-
+  <script>
+    var head = document.getElementsByTagName('head')[0];
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = 'https://storage.googleapis.com/bliink-creatives-web-app/blink_assets/studio/blink-styles.css';
+    link.media = 'all';
+    head.appendChild(link);
+  </script>
 </body>
 
 </html>
